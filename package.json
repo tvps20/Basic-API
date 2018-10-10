@@ -2,6 +2,10 @@
   "name": "lego-api",
   "version": "1.0.0",
   "description": "Api para Projeto de controle de colecoes lego",
+  "engines": {
+    "node": "0.10.41",
+    "npm": "1.4.29"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
