@@ -1,13 +1,13 @@
 import App from './app';
 
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
-App.app.listen(port, (err) => {
+App.app.listen(PORT, (err) => {
     if(err){
         return console.log(err);
     }
 
-    return console.log(`Serve is listening on ${port}`)
+    return console.log(`Serve is listening on ${PORT}`)
 });
 
 // Fechar a conexão com o banco caso o a excução pare.
