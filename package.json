@@ -9,7 +9,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start-production": "node ./build/server.js",
+=======
+    "start-production": "node ./build server.js",
+>>>>>>> 87e2d447b55df4dd50fb5b1247b286ee6f83218c
     "start-dev": "tsc -w && node ./build/server.js",
     "ts": "tsc -w",
     "server": "nodemon ./build/server.js"
