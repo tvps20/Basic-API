@@ -2,7 +2,8 @@ import express = require('express');
 import * as morgan from 'morgan';
 import * as bodyParser from 'body-parser';
 import DataBase from './config/db';
-import UserRoutes from './modules/user/routes';
+import UserController from './modules/user/controller';
+import ROUTES from '../routes/routes'
 
 class App {
   
@@ -25,7 +26,7 @@ class App {
     }
 
     public routes() {
-       new UserRoutes(this.app);
+        ROUTES(this.app);
     }   
 }
 
