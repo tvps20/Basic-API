@@ -4,17 +4,18 @@ class DataBase {
     private DB_URI = 'mongodb://127.0.0.1/ts-lego-api';
     private DB_CONNECTION;
 
-    constructor() {}
+    constructor() {
+        this.createConnection();
+    }
 
     createConnection() {
         
         if(process.env.NODE_ENV == 'production') {
-            mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-            this.logger(process.env.MONGODB_URI);
-        } else {
-            mongoose.connect(this.DB_URI, { useNewUrlParser: true });
-            this.logger(this.DB_URI);
-        }     
+            this.DB_URI = process.env.MONGODB_URI;
+        } 
+        
+        mongoose.connect(this.DB_URI, { useNewUrlParser: true });
+        this.logger(this.DB_URI);  
     }
 
     logger(uri) {
@@ -32,4 +33,4 @@ class DataBase {
     }
 }
 
-export default DataBase;
+export default new DataBase;
