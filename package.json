@@ -5,10 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-production": "node ./build/server.js",
+    "start": "node ./build/server.js",
     "start-dev": "PORT=3000 NODE_ENV=development nodemon ./build/server.js",
     "ts": "tsc -w",
     "server": "nodemon ./build/server.js"
+
   },
   "keywords": [
     "LEGO",
