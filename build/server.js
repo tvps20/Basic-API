@@ -6,7 +6,7 @@ app_1.default.app.listen(PORT, function (err) {
     if (err) {
         return console.log(err);
     }
-    return console.log("Serve is listening on " + PORT);
+    return console.log("Serve is listening on " + PORT); 
 });
 // Fechar a conexão com o banco caso o a excução pare.
 process.once('SIGUSR2', function () { return app_1.default.closeDataBaseConnection('Nodemon restart', function () { return process.kill(process.pid, 'SIGUSR2'); }); });

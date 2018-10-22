@@ -20,7 +20,7 @@ class DataBase {
 
     logger(uri) {
         this.DB_CONNECTION = mongoose.connection;
-        this.DB_CONNECTION.on('connected', () => console.log(`Mondoose esta conectado ao ${ uri }`));
+        this.DB_CONNECTION.on('connected', () => console.log(`Mongoose esta conectado ao ${ uri }`));
         this.DB_CONNECTION.on('error', error => console.log(`Erro na conexão: ${ error }`));
         this.DB_CONNECTION.on('disconnected', () => console.log(`Mongoose esta desconectado do ${ uri }`));
     }

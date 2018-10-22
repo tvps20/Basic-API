@@ -1,6 +1,7 @@
 import App from './app';
 
 const PORT = process.env.PORT || 3000
+console.log(PORT);
 
 App.app.listen(PORT, (err) => {
     if(err){
