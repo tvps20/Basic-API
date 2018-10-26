@@ -1,5 +1,5 @@
 {
-  "name": "lego-api",
+  "name": "basic-api",
   "version": "1.0.0",
   "description": "Api para Projeto de controle de colecoes lego",
   "main": "server.js",
