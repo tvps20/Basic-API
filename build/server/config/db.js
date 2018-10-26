@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var mongoose = require("mongoose");
 var DataBase = /** @class */ (function () {
     function DataBase() {
-        this.DB_URI = 'mongodb://127.0.0.1/ts-base-api';
+        this.DB_URI = 'mongodb://127.0.0.1/ts-basic-api';
         this.createConnection();
     }
     DataBase.prototype.createConnection = function () {

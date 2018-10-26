@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose'
 
 class DataBase {
-    private DB_URI = 'mongodb://127.0.0.1/ts-base-api';
+    private DB_URI = 'mongodb://127.0.0.1/ts-basic-api';
     private DB_CONNECTION;
 
     constructor() {
