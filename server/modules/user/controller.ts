@@ -1,6 +1,5 @@
 import * as repository from './repository';
 import * as httpStatus from 'http-status';
-import { Result } from 'range-parser';
 
 const sendResponse = function(res, statusCode, date ) {
     res.status(statusCode).json({ 'result': date })
