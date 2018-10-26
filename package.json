@@ -6,10 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./build/server.js",
-    "start-dev": "set PORT=3001 & set NODE_ENV=development & nodemon ./build/server.js",
+    "start-dev": "set PORT=3000 & set NODE_ENV=development & nodemon ./build/server.js",
     "ts": "tsc -w",
     "server": "nodemon ./build/server.js"
-
   },
   "keywords": [
     "LEGO",
