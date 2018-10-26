@@ -3,6 +3,7 @@
         "target": "es5",
         "module": "commonjs",
         "outDir": "./build",
+        "lib": ["es2015"],
         "typeRoots": [
             "../node_modules/@types"
         ],
